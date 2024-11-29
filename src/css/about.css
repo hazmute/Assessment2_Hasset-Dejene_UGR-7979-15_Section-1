@@ -1,0 +1,45 @@
+/* Section Styles */
+section {
+  flex-direction: column;
+  width: 900px;
+  line-height: 2;
+  padding: 20px; 
+  background-color: #f0f4f8; 
+  background: linear-gradient(135deg, #f0f4f8, #dcdde1); 
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  animation: fadeInLeft 0.5s ease-in-out;
+}
+
+/* Keyframes for Animations */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Template Styles */
+main .template {
+  width: 100%;
+}
+main > div {
+  margin: auto;
+  width: 1200px;
+  display: flex;
+  gap: 50px;
+}
+
+/* Heading Styles */
+main h2 {
+  margin-bottom: 0;
+}
+main h3 {
+  margin-top: 10px;
+}
+
+/* No changes required for image placements in CSS */

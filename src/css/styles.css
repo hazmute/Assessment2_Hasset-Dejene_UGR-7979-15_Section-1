@@ -1,0 +1,306 @@
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 12px Arial, Helvetica, sans-serif;
+}
+
+/* Header Styles */
+header {
+  background-color: #2c3e50; 
+  background: linear-gradient(135deg, #2c3e50, #8e44ad); 
+  color: white;
+  padding: 5px 0;
+  animation: fadeIn 1s ease-in-out;
+}
+header span {
+  color: #f39c12;
+}
+header .container {
+  width: 1200px;
+  margin: auto;
+}
+header .textContainer {
+  display: inline-block;
+}
+.box {
+  display: inline-block;
+  font-size: 70px;
+  margin: 0;
+  padding: 0;
+}
+header .slogan {
+  text-align: end;
+  margin-top: 20px;
+  font-size: 12px;
+}
+header .slogan p {
+  font-size: 20px;
+  margin: 0;
+}
+
+/* Navigation Styles */
+header nav {
+  margin-top: 50px;
+}
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  list-style: none;
+  margin-top: 0;
+  padding: 0;
+  font-weight: bold;
+}
+header nav ul li {
+  background-color: #8e44ad;
+  padding: 8px 20px;
+  border-radius: 5px;
+}
+header nav ul a {
+  text-decoration: none;
+  color: inherit;
+}
+header nav ul li:hover {
+  background-color: #71368a;
+}
+header nav ul li:active a {
+  background-color: #c48c48;
+}
+
+/* Active Navigation Link Styles */
+header nav ul li a.active {
+  background-color: yellow; /* Changed color to yellow */
+  color: #000000; /* Changed text color for better contrast */
+}
+
+header nav ul li.active {
+  background-color: yellow; 
+  color: #000000; 
+}
+
+header nav ul li.active a {
+  color: #000000; 
+}
+
+/* Main Content Styles */
+.mainContainer {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.mainContainer img,
+.innerImageContainer,
+.imageContainer {
+  width: 100%;
+}
+.innerImageContainer {
+  width: 100%;
+  height: 145px;
+  overflow: hidden;
+  padding-bottom: 5px;
+  object-fit: contain;
+}
+.imageContainer {
+  width: 100%;
+  height: 150px;
+  border: 1px solid rgb(196, 193, 193);
+  padding: 5px;
+}
+.template {
+  width: 45%;
+}
+main h2 {
+  font-size: 35px;
+  color: #27ae60; /* New color: Emerald Green */
+}
+main {
+  display: flex;
+  width: 1200px;
+  margin: auto;
+}
+aside ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+aside h4 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+aside p {
+  margin-top: 5px;
+  padding-top: 0;
+}
+aside nav > ul {
+  gap: 15px;
+}
+aside nav {
+  padding: 0;
+  margin-top: 20px;
+}
+.sponsors,
+aside nav > ul {
+  margin: 0;
+  padding-left: 0;
+}
+aside nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+.mainContainer > div p {
+  line-height: 1.8;
+  font-size: 18px;
+}
+.mainContainer .template a,
+.contact a,
+.about a {
+  color: #8e44ad; 
+}
+.mainContainer .template .readMore {
+  color: #e74c3c; /* New color: Alizarin Crimson */
+}
+
+/* Footer Styles */
+footer {
+  background-color: #1e3a5f;
+  color: white;
+  line-height: 1.8;
+  animation: fadeIn 1s ease-in-out;
+}
+.footerContainer {
+  width: 65%;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  margin: auto;
+  gap: 10px;
+  padding: 10px 0;
+}
+.GalleryImageContainer {
+  display: grid;
+  gap: 5px;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+}
+.gallery .image,
+.imageAndTextContainer img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  background-color: #1e3a5f;
+}
+.footerContainer .image img {
+  width: 100%;
+  height: 100%;
+  background-color: #1e3a5f;
+}
+.contact ul {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  gap: 5px;
+  padding-left: 0;
+}
+.imageAndTextContainer {
+  gap: 5px;
+  width: 100%;
+}
+.aboutImageContainer {
+  background-color: gray;
+  width: 100px;
+  height: 100px;
+  margin: 0 10px 5px 0;
+  float: left;
+}
+.aboutImageContainer img {
+  width: 100%;
+  height: 100px; 
+  object-fit: cover;
+}
+.float-img {
+  float: left;
+  padding: 0 15px 15px 0;
+}
+.contact span {
+  font-weight: bold;
+}
+.copyright {
+  background-color: #2c3e50;
+  padding: 15px 0;
+}
+.left p {
+  color: white;
+}
+.copyright > div {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  margin: auto;
+}
+.copyright nav ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+.copyright nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+.copyright nav ul li:hover a {
+  color: #9cc31d;
+}
+.left p a {
+  color: #f39c12;
+}
+
+/* Button Styles */
+.styled-button {
+  background-color: #8e44ad; 
+  color: white; 
+  border: none; 
+  border-radius: 5px; 
+  padding: 10px 20px; 
+  font-size: 14px; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; 
+  animation: buttonHover 0.3s ease-in-out;
+  margin-top: 0px;
+}
+
+.styled-button:hover {
+  background-color: #71368a;
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Keyframes for Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes buttonHover {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
+
+/* No changes required for image placements in CSS */
+
+/* Footer Gallery Styles */
+.footerContainer .GalleryImageContainer .image {
+  width: 100%;
+  /* Ensure images 5-10 fit well */
+  /* ...existing styles... */
+}
